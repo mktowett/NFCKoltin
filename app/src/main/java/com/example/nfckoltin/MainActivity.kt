@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun resolveIntent(intent: Intent) {
         val action = intent.action
-
+        Log.d("onTAG","onTag $action")
         if (NfcAdapter.ACTION_TAG_DISCOVERED == action
             || NfcAdapter.ACTION_TECH_DISCOVERED == action
             || NfcAdapter.ACTION_NDEF_DISCOVERED == action
